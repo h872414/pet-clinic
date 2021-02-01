@@ -43,6 +43,7 @@
                 <configuration>
                     <goals>
                         <goal>install</goal>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
                     </goals>
                 </configuration>
             </plugin>
