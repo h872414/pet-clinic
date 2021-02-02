@@ -2,10 +2,13 @@ package hu.kt.sfgpetclinic.services.map;
 
 import hu.kt.sfgpetclinic.model.Vet;
 import hu.kt.sfgpetclinic.services.CrudService;
+import hu.kt.sfgpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+@Service
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
