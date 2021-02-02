@@ -7,8 +7,24 @@
     <title>List of Pet Owners</title>
 </head>
 <body>
-
+<!--/*@thymesVar id="owner" type="hu.kt.sfgpetclinic.model"*/-->
 <h1 th:text="'List of Owners'">Owners list</h1>
 
+<table>
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+    </tr>
+    <tbody>
+    <tr th:each="owner : ${owners}">
+        <td th:text="${owner.getId()}">1</td>
+        <td th:text="${owner.getFirstName()}">Joe</td>
+        <td th:text="${owner.getLastName()}">Buck</td>
+    </tr>
+    </tbody>
+    </thead>
+</table>
 </body>
 </html>
