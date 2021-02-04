@@ -7,6 +7,8 @@ import hu.kt.sfgpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.stream.Stream;
+
 @Component
 public class DataLoader implements CommandLineRunner {
 
@@ -17,6 +19,8 @@ public class DataLoader implements CommandLineRunner {
         this.ownerService = ownerService;
         this.vetService = vetService;
     }
+
+
 
     @Override
     public void run(final String... args) throws Exception {
