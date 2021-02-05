@@ -12,9 +12,8 @@ import java.io.Serializable;
 
 @Getter
 @Setter
-@FieldDefaults(level = AccessLevel.PRIVATE)
 public class BaseEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 }
