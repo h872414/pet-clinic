@@ -1,9 +1,7 @@
 package hu.kt.sfgpetclinic.model;
 
-import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.experimental.FieldDefaults;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,4 +14,5 @@ public class BaseEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
 }
